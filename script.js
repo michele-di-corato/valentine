@@ -23,7 +23,7 @@ noBtn.addEventListener("click", () => {
     noBtn.classList.remove("no");
     noBtn.classList.add("yes");
     noBtn.setAttribute("onclick", "sayYes()");
-    noMessage.textContent = "";
+    noMessage.textContent = messages[noClickCount];
   }
 });
 
