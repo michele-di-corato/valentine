@@ -13,7 +13,7 @@ const messages = [
 ];
 
 noBtn.addEventListener("click", () => {
-  if (noClickCount < messages.length) {
+  if (noClickCount <= messages.length) {
     noMessage.textContent = messages[noClickCount];
     noClickCount++;
   }
@@ -23,7 +23,6 @@ noBtn.addEventListener("click", () => {
     noBtn.classList.remove("no");
     noBtn.classList.add("yes");
     noBtn.setAttribute("onclick", "sayYes()");
-    noMessage.textContent = messages[noClickCount];
   }
 });
 
